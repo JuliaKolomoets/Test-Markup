@@ -152,6 +152,8 @@ header {
     }
 
     form {
+      position: relative;
+      z-index: 11;
       p {
         font-family: $main_font;
         font-size: 17px;

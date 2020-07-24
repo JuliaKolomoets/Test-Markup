@@ -2,6 +2,8 @@
 @media only screen and (max-width: 1024px) {
     .item_wrap{
         justify-content: flex-end;
+        padding-left: 95px;
+        flex-wrap: wrap;
     }
 }
 

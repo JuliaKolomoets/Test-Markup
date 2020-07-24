@@ -104,41 +104,44 @@ header {
         margin-right: 8px; }
       header .header_section ul li span:last-of-type {
         font-weight: 400; }
-    header .header_section form p {
-      font-family: "HelveticaNeueCyr";
-      font-size: 17px;
-      margin-right: 14px;
-      position: relative; }
-      header .header_section form p:before {
-        content: "\f073";
-        display: inline-block;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        color: #666666;
-        position: absolute;
-        right: 12px;
-        top: 0px;
-        background-color: #ebebeb;
+    header .header_section form {
+      position: relative;
+      z-index: 11; }
+      header .header_section form p {
+        font-family: "HelveticaNeueCyr";
+        font-size: 17px;
+        margin-right: 14px;
+        position: relative; }
+        header .header_section form p:before {
+          content: "\f073";
+          display: inline-block;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: #666666;
+          position: absolute;
+          right: 12px;
+          top: 0px;
+          background-color: #ebebeb;
+          padding: 8px;
+          cursor: pointer; }
+        header .header_section form p:after {
+          content: "\f073";
+          display: inline-block;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: #666666;
+          position: absolute;
+          background-color: #ebebeb;
+          padding: 8px;
+          left: 200px;
+          cursor: pointer; }
+      header .header_section form input {
+        border-radius: 3px;
+        border: 1px solid #cccccc;
+        margin-right: 12px;
+        margin-left: 12px;
         padding: 8px;
-        cursor: pointer; }
-      header .header_section form p:after {
-        content: "\f073";
-        display: inline-block;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        color: #666666;
-        position: absolute;
-        background-color: #ebebeb;
-        padding: 8px;
-        left: 200px;
-        cursor: pointer; }
-    header .header_section form input {
-      border-radius: 3px;
-      border: 1px solid #cccccc;
-      margin-right: 12px;
-      margin-left: 12px;
-      padding: 8px;
-      outline: none; }
+        outline: none; }
 
 .main_section {
   background-color: #fafafa;
