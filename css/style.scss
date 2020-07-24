@@ -1,0 +1,398 @@
+@import "../fontawesome-free-5.0.8/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css";
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ofont.ru_Proxima Nova.eot');
+  src: local('☺'), url('../fonts/ofont.ru_Proxima Nova.woff') format('woff'), url('../fonts/ofont.ru_Proxima Nova.ttf') format('truetype'), url('../fonts/ofont.ru_Proxima Nova.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/proximanova-bold.eot');
+  src: local('☺'), url('../fonts/proximanova-bold.woff') format('woff'), url('../fonts/proximanova-bold.ttf') format('truetype'), url('../fonts/proximanova-bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/proximanovacond-semibold.eot');
+  src: local('☺'), url('../fonts/proximanovacond-semibold.woff') format('woff'), url('../fonts/proximanovacond-semibold.ttf') format('truetype'), url('../fonts/proximanovacond-semibold.svg') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+  url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+  url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+  url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+  url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, input, ul, li, p, span, div, header, section, input, a, img {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+$main_font: 'HelveticaNeueCyr';
+$second_font: 'Proxima Nova';
+.container {
+  max-width: 935px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+
+  &:before {
+    content: url("../images/image header.png");
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  &:after {
+    content: url("../images/image footer.png");
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 960px;
+    z-index: 2;
+  }
+}
+
+header {
+  position: relative;
+  z-index: 3;
+  background-color: rgba(253, 253, 253, 0.5);
+
+
+  .header_section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px 0 25px 0;
+
+    a {
+      float: left;
+    }
+
+    .about_project {
+      float: right;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    h1 {
+      font-size: 35px;
+      color: #262626;
+      display: inline-block;
+      font-family: $second_font;
+      margin-right: 30px;
+    }
+
+    .date {
+      font-size: 15px;
+      color: #4090db;
+      font-family: $main_font;
+      font-weight: 400;
+      border: 1px solid #4090db;
+      padding: 10px;
+      border-radius: 3px;
+    }
+
+    ul {
+      li {
+        display: inline-block;
+        font-size: 17px;
+        font-family: $second_font;
+        color: #3d4044;
+        margin-right: 28px;
+
+        span:first-of-type {
+          font-weight: bold;
+          margin-right: 8px;
+        }
+
+        span:last-of-type {
+          font-weight: 400;
+        }
+      }
+    }
+
+    form {
+      p {
+        font-family: $main_font;
+        font-size: 17px;
+        margin-right: 14px;
+        position: relative;
+
+        &:before {
+          content: "\f073";
+          display: inline-block;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: #666666;
+          position: absolute;
+          right: 12px;
+          top: 0px;
+          background-color: #ebebeb;
+          padding: 8px;
+          cursor: pointer;
+        }
+
+        &:after {
+          content: "\f073";
+          display: inline-block;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: #666666;
+          position: absolute;
+          background-color: #ebebeb;
+          padding: 8px;
+          left: 200px;
+          cursor: pointer;
+        }
+      }
+
+      input {
+        border-radius: 3px;
+        border: 1px solid #cccccc;
+        margin-right: 12px;
+        margin-left: 12px;
+        padding: 8px;
+        outline: none;
+      }
+    }
+  }
+}
+
+.main_section {
+  background-color: #fafafa;
+  padding: 70px 0;
+  text-align: center;
+  position: relative;
+
+
+  .monblan_item {
+    position: relative;
+
+    .wrapper {
+      text-align: left;
+      position: relative;
+      z-index: 9;
+
+      .item_wrap {
+        display: flex;
+        justify-content: space-around;
+        background-color: #fff;
+        margin-bottom: 10px;
+
+        p {
+          font-family: $second_font;
+          font-size: 17px;
+          font-weight: 600;
+        }
+
+        span {
+          font-family: $second_font;
+          font-size: 17px;
+          font-weight: 700;
+
+          &:first-of-type:before {
+            content: "\f004";
+            display: inline-block;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: #343537;
+            margin-right: 5px;
+            cursor: pointer;
+          }
+
+          &:last-of-type:before {
+            content: "\f27a";
+            display: inline-block;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: #343537;
+            margin-right: 5px;
+            cursor: pointer;
+          }
+        }
+
+        .date_upload {
+          font-family: $main_font;
+        }
+      }
+
+      .one_item {
+        background-image: url(../images/image1.png);
+        background-repeat: no-repeat;
+      }
+
+      .two_item {
+        background-image: url(../images/image2.png);
+        background-repeat: no-repeat;
+      }
+
+      .three_item {
+        background-image: url(../images/image3.png);
+        background-repeat: no-repeat;
+      }
+
+      .four_item {
+        background-image: url(../images/image4.png);
+        background-repeat: no-repeat;
+      }
+
+      .five_item {
+        background-image: url(../images/image5.png);
+        background-repeat: no-repeat;
+      }
+
+      .six_item {
+        background-image: url(../images/image6.png);
+        background-repeat: no-repeat;
+      }
+
+      .seven_item {
+        background-image: url(../images/image7.png);
+        background-repeat: no-repeat;
+      }
+
+      .eight_item {
+        background-image: url(../images/image8.png);
+        background-repeat: no-repeat;
+      }
+
+      .nine_item {
+        background-image: url(../images/img.png);
+        background-repeat: no-repeat;
+      }
+    }
+
+    a.more_btn {
+      text-decoration: none;
+      font-family: 'Proxima Nova';
+      font-size: 12px;
+      text-transform: uppercase;
+      color: black;
+      border: 1px solid black;
+      border-radius: 50px;
+      padding: 10px 30px;
+      display: inline-block;
+      margin-top: 50px;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.active {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .item_wrap {
+
+      background-size: cover;
+      max-width: 290px;
+      padding: 170px 3px 15px 3px;
+      color: white;
+      font-size: 14px;
+
+      div {
+        display: inline;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+
+  .clickable {
+    cursor: pointer;
+    font-size: 24px;
+    color: #cbcac9;
+    margin-bottom: 28px;
+    position: absolute;
+    right: 0;
+    top: -50px;
+
+    &:hover {
+      color: #4090db;
+    }
+  }
+
+  .clickable_list {
+    cursor: pointer;
+    font-size: 24px;
+    color: #cbcac9;
+    margin-bottom: 28px;
+    position: absolute;
+    right: 40px;
+    top: -50px;
+
+    &:hover {
+      color: #4090db;
+    }
+  }
+
+  .ui-state-default, .ui-widget-content .ui-state-default {
+    border: none;
+    background-color: white;
+  }
+
+  .ui-state-highlight, .ui-widget-content .ui-state-highlight {
+    background-color: #4090db;
+  }
+
+  .ui-widget-header {
+    background-color: white;
+    font-family: $main_font;
+    font-weight: 700;
+    border: none;
+  }
+
+
+
+
+
+
+
+
